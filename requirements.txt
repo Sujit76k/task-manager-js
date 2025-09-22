@@ -1,0 +1,5 @@
+# This is a front-end project. No server-side packages are required.
+
+# Prerequisites:
+1. A modern web browser (e.g., Google Chrome, Mozilla Firefox, Microsoft Edge).
+2. An active internet connection (to load the Font Awesome icon library).

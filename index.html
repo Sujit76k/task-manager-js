@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager with Progress Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="banner-img"></div>
+    <h1>Task Manager with Progress Tracker</h1>
+
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter a new task">
+      <input type="date" id="dueDateInput" min="">
+      <select id="priorityInput">
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+      </select>
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <div class="filter-section">
+      <button onclick="setFilter('all')">All</button>
+      <button onclick="setFilter('pending')">Pending</button>
+      <button onclick="setFilter('completed')">Completed</button>
+      <button onclick="clearCompleted()">Clear Completed</button>
+      <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </div>
+
+    <div id="taskList"></div>
+
+    <div class="progress-section">
+      <label>Progress:</label>
+      <progress id="progressBar" value="0" max="100"></progress>
+      <span id="progressText">0% Complete</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
